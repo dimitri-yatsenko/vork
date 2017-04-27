@@ -14,4 +14,4 @@ RUN pip3 uninstall -y commons && \
     git clone https://github.com/datajoint/datajoint-python && \
     pip3 install -e datajoint-python
 
-WORKDIR /notebooks
+ENTRYPOINT /bin/bash
