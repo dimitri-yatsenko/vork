@@ -1,0 +1,13 @@
+version: '2'
+services:
+  develop:
+    build: .
+    environment:
+      - DJ_HOST=10.28.3.113
+      - DJ_USER=dimitri
+    ports:
+      - 8888:8888
+      - 6006:6006
+    volumes:
+      - ..:/work
+      - ..:/notebooks
